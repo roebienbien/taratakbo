@@ -22,10 +22,10 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <nav className={`blur-backdrop-filter fixed top-0 z-[99] h-16 w-full bg-clip-padding ${isScrolled ? 'bg-white text-black' : 'text-white'}`}>
+    <nav className={`blur-backdrop-filter fixed top-0 z-[99] h-16 w-full bg-clip-padding ${isScrolled ? 'bg-white text-black border-b border-gray-300' : 'text-white'}`}>
       <div className='mx-auto flex h-full w-[80%] items-center justify-between rounded-full px-8'>
-        <span className='text-4xl'>Logo</span>
-        <ul className='flex gap-x-4 text-xl font-semibold'>
+        <span className='text-4xl font-bold'>Logo</span>
+        <ul className='flex gap-x-4 text-xl '>
           {NavLinks.map((link, index) => (
             <Link key={index} to={link.to}>
               {link.text}
@@ -33,7 +33,7 @@ const Navbar = () => {
           ))}
         </ul>
         <div className='flex gap-x-4'>
-          <PrimaryButton text={'Login'} className='w-20 p-3 text-lg' />
+          <PrimaryButton text={'Login'} className='w-20 font-bold p-3 text-lg' />
         </div>
       </div>
     </nav>

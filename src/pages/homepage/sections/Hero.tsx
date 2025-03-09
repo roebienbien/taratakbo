@@ -1,6 +1,5 @@
-import PrimaryButton from "../../components/ui/buttons/PrimaryButton";
-import UnsplashImage from "../../components/UnsplashImage";
-
+import PrimaryButton from '../../../components/ui/buttons/PrimaryButton';
+import UnsplashImage from '../../../components/UnsplashImage';
 const runGuy = '1466761366829-84fd59a22e0b';
 
 const Hero = () => {
@@ -8,7 +7,6 @@ const Hero = () => {
   return (
     <div className='relative flex h-screen w-full text-white'>
 			<UnsplashImage photoId={runGuy} alt={'hero-image'} className='object-right-top' />
-
 			{/* <div className='absolute left-0 h-full w-full bg-black opacity-80'></div> */}
 			<div className='absolute left-0 h-full w-full bg-gradient-to-l from-transparent to-black'></div>
 			<div className='absolute flex h-full w-2/3 flex-col items-center justify-center'>
