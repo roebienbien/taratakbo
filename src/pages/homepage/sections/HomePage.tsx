@@ -3,11 +3,12 @@ import AppPromotion from '../../../components/AppPromotion.tsx';
 import TrustedBy from '../../../components/TrustedBy.tsx';
 import ValueProposition from '../../../components/ValueProposition.tsx';
 import Hero from './Hero.tsx';
+import PricePlan from './PricePlan.tsx';
 import Reviews from './Reviews.tsx';
 import UpcomingEvents from './UpcomingEvents.tsx';
 
 const HomePage = () => {
-	const components = [Hero,  AppPromotion, ValueProposition, TrustedBy, UpcomingEvents, AppStatistics, Reviews]
+	const components = [Hero,  AppPromotion, ValueProposition, TrustedBy, PricePlan, UpcomingEvents, AppStatistics, Reviews]
   return (
     <div className='flex flex-col'>
 			{components.map((Component, index) => (

@@ -14,7 +14,7 @@ const UpcomingEvents = () => {
 					participants: 4752
 				},
 				{
-					title: 'Padyat at Takbo sa Banaue 2025',
+					title: 'Padyak at Takbo sa Banaue 2025',
 					participants: 5024
 				}
 			]	
@@ -56,10 +56,10 @@ const UpcomingEvents = () => {
 	]
 	return(
 		<div className="px-14 flex flex-col  justify-center h-[400px]">
-			<h3 className="text-4xl border-b border-gray-300 pb-4">Upcoming Events</h3>
+			<h3 className="text-4xl border-b border-gray-400 font-bold pb-4">Upcoming Events</h3>
 			<div className="grid grid-cols-4 mt-8">
 					<div className="flex flex-col gap-y-10 max-w-[300px]">
-					<span className="text-4xl font-bold">
+					<span className="text-4xl font-semibold">
 						First Quarter of 2025
 					</span>
 					<div className="flex gap-x-2 items-center text-blue-600">
@@ -68,15 +68,15 @@ const UpcomingEvents = () => {
 					</div>
 				</div>	
 				{Events.map((event, index) => (
-					<div key={index} className="flex flex-col">
+					<div key={index} className="flex flex-col gap-y-2">
 						<span className="text-3xl font-semibold">{event.region}</span>
 						{event.run.map((run, index) => (
 							<div key={index} className="flex flex-col">
-								<div className="flex gap-x-2 items-center text-blue-600">
+								<div className="flex gap-x-1 items-center text-blue-600">
 									<Link to={'/'} className="text-lg">{run?.title}</Link>	
 									<FaChevronRight className="text-xs"/>
 								</div>
-								<span className="text-gray-600">{run?.participants.toLocaleString()} runners</span>	
+								<span className="text-gray-600 text-xs">{run?.participants.toLocaleString()} runners</span>	
 							</div>
 						))}
 					</div>

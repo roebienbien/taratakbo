@@ -29,8 +29,8 @@ const ValueProposition = () => {
       <h2 className="text-5xl font-bold mb-4">Why Join Us?</h2>
       <div className="grid md:grid-cols-3 gap-4">
         {Values.map((value, index) => (
-          <div key={index} className="p-4 items-center gap-y-4 text-center flex flex-col border rounded-lg shadow-sm">
-						<value.icon className="text-4xl"/>
+          <div key={index} className="p-4 items-center gap-y-4 text-center flex flex-col border border-gray-200  rounded-lg shadow-sm">
+						<value.icon className="text-4xl fill-blue-600"/>
             <h3 className="text-xl font-semibold">{value.title}</h3>
             <p className="text-gray-600">{value.description}</p>
           </div>

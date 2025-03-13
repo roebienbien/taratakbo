@@ -27,11 +27,11 @@ const TrustedBy = () => {
 
 	return(
 		<div className="h-40  flex flex-col items-center justify-center">
-			<span className="text-sm">Trusted by trusted Companies</span>
+			<span className="text-sm">Trusted by well-trusted Companies</span>
 			<div className="flex justify-center gap-x-20">
 				{Clients.map((client, index) => (
 					<div key={index}>
-						<client.icon className="text-8xl fill-gray-600"/>
+						<client.icon className="text-8xl fill-gray-400"/>
 					</div>
 				))}				 
 			</div>
