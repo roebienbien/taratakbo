@@ -5,23 +5,19 @@ import ValueProposition from '../../../components/ValueProposition.tsx';
 import Hero from './Hero.tsx';
 import PricePlan from './PricePlan.tsx';
 import Reviews from './Reviews.tsx';
+import TrainingPlan from './TrainingPlan.tsx';
 import UpcomingEvents from './UpcomingEvents.tsx';
+import Workouts from './Workouts.tsx';
 
 const HomePage = () => {
-	const components = [Hero,  AppPromotion, ValueProposition, TrustedBy, PricePlan, UpcomingEvents, AppStatistics, Reviews]
+	const components = [Hero, TrustedBy, ValueProposition, TrainingPlan, PricePlan, Workouts, AppPromotion, UpcomingEvents, AppStatistics, Reviews]
   return (
     <div className='flex flex-col'>
 			{components.map((Component, index) => (
-				<div key={index} className='odd:bg-gray-100 even: bg-gray-200'>
+				<div key={index} className='odd:bg-white even: bg-gray-100'>
 						<Component />
 				</div>
 			))}
-			{/* <Hero /> */}
-			{/* <AppStatistics /> */}
-			{/* <AppPromotion /> */}
-			{/* <ValueProposition /> */}
-			{/* <Reviews /> */}
-			{/* <TrustedBy /> */}
     </div>
   );
 };

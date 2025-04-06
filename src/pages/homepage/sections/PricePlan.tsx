@@ -1,4 +1,4 @@
-import { FaChevronRight, FaRegCircleCheck, FaUser, FaUserGroup } from "react-icons/fa6";
+import { FaRegCircleCheck, FaUser, FaUserGroup } from "react-icons/fa6";
 import PrimaryButton from "../../../components/ui/buttons/PrimaryButton";
 
 const Prices = [
@@ -82,7 +82,7 @@ const PricePlan = () => {
 							{/* Features  */}
 							<ul className="flex flex-col gap-y-2 p-4">
 								{price.features.map((feature, index) => (
-									<div key={index} className="flex gap-x-2 items-center">
+									<div key={index} className="flex text-sm gap-x-2 items-center">
 										<FaRegCircleCheck className="fill-green-600" />
 									 <li>{feature}</li>
 									</div>

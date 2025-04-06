@@ -26,14 +26,16 @@ const Clients = [
 const TrustedBy = () => {
 
 	return(
-		<div className="h-40  flex flex-col items-center justify-center">
-			<span className="text-sm">Trusted by well-trusted Companies</span>
-			<div className="flex justify-center gap-x-20">
-				{Clients.map((client, index) => (
-					<div key={index}>
-						<client.icon className="text-8xl fill-gray-400"/>
-					</div>
-				))}				 
+		<div className="min-h-40">
+			<div className="flex py-8 items-center justify-center flex-col">
+				<span className="text-lg text-gray-800">Trusted by 100+ companies worldwide.</span>
+				<div className="flex justify-center gap-x-20">
+					{Clients.map((client, index) => (
+						<div key={index}>
+							<client.icon className="text-8xl fill-gray-400"/>
+						</div>
+					))}				 
+				</div>
 			</div>
 		</div>
 	)

@@ -55,7 +55,7 @@ const UpcomingEvents = () => {
 		},
 	]
 	return(
-		<div className="px-14 flex flex-col  justify-center h-[400px]">
+		<div className="px-14 flex flex-col  justify-center my-20 h-[400px]">
 			<h3 className="text-4xl border-b border-gray-400 font-bold pb-4">Upcoming Events</h3>
 			<div className="grid grid-cols-4 mt-8">
 					<div className="flex flex-col gap-y-10 max-w-[300px]">
