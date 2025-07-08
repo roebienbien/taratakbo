@@ -1,5 +1,3 @@
-// src/components/icons/MyIcon.tsx
-import React from 'react';
 import clsx from 'clsx';
 
 type MyIconProps = {

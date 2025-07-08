@@ -1,4 +1,3 @@
-import UnsplashImage from '../../../../components/UnsplashImage';
 import ReviewCard from './ReviewCard';
 
 export type TReview = {
