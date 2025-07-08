@@ -1,5 +1,7 @@
 import { useState } from "react";
 import UnsplashImage from "../../../components/UnsplashImage";
+import { FaRegClock } from "react-icons/fa";
+import { FaPersonRunning } from "react-icons/fa6";
 
 const workoutList = [
   {
@@ -14,7 +16,7 @@ const workoutList = [
     id: "tempo-run",
     title: "Tempo Run",
 		photoId: '1678964117504-dc77a8b9985a',
-    pace: "Comfortably hard, but sustainable",
+    pace: "Comfortably hard, but sustainable pace",
     duration: "20–40 minutes at tempo pace",
     description: "Tempo runs improve your lactate threshold, making it easier to sustain faster paces over time."
   },
@@ -66,14 +68,20 @@ const Workouts = () => {
 				</nav>
 				{/*Content  */}
 				<div className="h-[700px] rounded shadow relative w-3/5 bg-blue-400">
-					<UnsplashImage photoId={activeWorkout.photoId} alt={"running-workout"} className="h-full object-top"/>
-					<div className="absolute flex flex-col gap-y-6 bottom-0 w-full text-white bg-black/50 p-4">
+					<UnsplashImage photoId={activeWorkout.photoId} alt={"running-workout"} className="h-full brightness-85 object-top"/>
+					<div className="absolute flex flex-col gap-y-6 bottom-0 w-full text-white bg-black/70 p-4">
 						<h2 className="text-4xl font-semibold">{activeWorkout.title}</h2>
-						<div className="flex gap-x-5">
-							<span>{activeWorkout.pace}</span>
-							<span>{activeWorkout.duration}</span>
+						<div className="flex flex-col gap-y-2">
+							<div className="flex gap-x-2 items-center">
+								<FaPersonRunning />
+								<span>{activeWorkout.pace}</span>
+							</div>
+							<div className="flex gap-x-2 items-center">
+								<FaRegClock />
+								<span>{activeWorkout.duration}</span>
+							</div>
 						</div>
-						<p className="">{activeWorkout.description}</p>
+						{/* <p className="">{activeWorkout.description}</p> */}
 					</div>
 				</div>
 			</div>

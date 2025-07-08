@@ -1,7 +1,16 @@
-// tailwind.config.js
-module.exports = {
-  // ... your existing configuration
-  plugins: [
-    // ... other plugins
-  ],
+const defaultTheme = require('tailwindcss/defaultTheme');
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    screens: {
+      xs: '425px',
+      ...defaultTheme.screens,
+    },
+    extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [],
 };

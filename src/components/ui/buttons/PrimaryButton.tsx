@@ -8,7 +8,7 @@ type PrimaryButtonProps = {
 
 const PrimaryButton = ({ text, className, onClick }: PrimaryButtonProps) => {
   return (
-    <button onClick={onClick} className={twMerge(`bg-blue-600 p-4 text white text-white rounded-xl`, className)}>
+    <button onClick={onClick} className={twMerge(`bg-blue-600 p-4 text-white rounded-xl`, className)}>
       {text}
     </button>
   );

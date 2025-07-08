@@ -8,7 +8,7 @@ type SecondaryButtonProps = {
 
 const SecondaryButton = ({ text, className, onClick }: SecondaryButtonProps) => {
   return (
-    <button onClick={onClick} className={twMerge(`border border-blue-600 p-4 text-blue-600 rounded-xl`, className)}>
+    <button onClick={onClick} className={twMerge(`text-blue-600 rounded-xl border border-blue-600 p-4`, className)}>
       {text}
     </button>
   );

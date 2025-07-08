@@ -3,22 +3,23 @@ import UnsplashImage from '../../../components/UnsplashImage';
 const runGuy = '1466761366829-84fd59a22e0b';
 
 const Hero = () => {
-	const peopleJoinedCount  = 12645
+  const peopleJoinedCount = 12645;
   return (
     <div className='relative flex h-screen w-full text-white'>
-			<UnsplashImage photoId={runGuy} alt={'hero-image'} className='object-right-top' />
-			{/* <div className='absolute left-0 h-full w-full bg-black opacity-80'></div> */}
-			<div className='absolute left-0 h-full w-full bg-gradient-to-l from-transparent to-black'></div>
-			<div className='absolute flex px-16 h-full w-2/3 flex-col items-center justify-center'>
-				<div className='flex flex-col gap-y-4'>
-					{/* <h1 className='max-w-2xl text-7xl'>Convincing headline Lorem ipsum dolor </h1> */}
-					<h1 className='max-w-4xl text-7xl'>
-						Start your <span className='font-bold'>personalized</span> running path now
-					</h1>
+      <UnsplashImage photoId={runGuy} alt={'hero-image'} className='object-right-top' />
+      {/* <div className='absolute left-0 h-full w-full bg-black opacity-80'></div> */}
+      <div className='absolute left-0 h-full w-full bg-gradient-to-l from-transparent to-black'></div>
+      <div className='absolute flex h-full w-2/3 flex-col items-center justify-center px-16'>
+        <div className='flex flex-col gap-y-4'>
+          {/* <h1 className='max-w-2xl text-7xl'>Convincing headline Lorem ipsum dolor </h1> */}
+          <h1 className='max-w-4xl text-7xl'>
+            Start your <span className='font-bold'>personalized</span> running path now
+          </h1>
           {/* <p className='max-w-[620px] text-xl'> */}
           <p className='max-w-[570px] text-xl'>
-            Our experienced coaches create personalized plans tailored to your goals and fitness level. Whether you're new to running or aiming for a
-            personal best, we're here to guide you every step of the way.
+            Our experienced coaches create personalized plans tailored to your goals and fitness level. Whether you're new to running{' '}
+            <br className='hidden lg:block' /> or aiming for a personal best, we're here to guide you
+            <br className='hiddend lg:block' /> every step of the way.
           </p>
           <div className='flex items-center gap-x-4 font-bold'>
             {/* <SecondaryButton text='Try for free' className='w-52' /> */}

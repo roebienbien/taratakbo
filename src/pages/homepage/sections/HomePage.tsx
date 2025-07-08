@@ -4,7 +4,7 @@ import TrustedBy from '../../../components/TrustedBy.tsx';
 import ValueProposition from '../../../components/ValueProposition.tsx';
 import Hero from './Hero.tsx';
 import PricePlan from './PricePlan.tsx';
-import Reviews from './Reviews.tsx';
+import Reviews from './reviews/Reviews.tsx';
 import TrainingPlan from './TrainingPlan.tsx';
 import UpcomingEvents from './UpcomingEvents.tsx';
 import Workouts from './Workouts.tsx';
